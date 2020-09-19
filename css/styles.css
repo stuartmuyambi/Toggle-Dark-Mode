@@ -12,6 +12,15 @@
     --primary-color: #67d1d2;
     --secondary-color: #f0fafb;
     --container-background: white;
+
+    /*Dark Theme*/
+    /*--light-gray: #17171a;
+    --border-color: #f6f6f9;
+    --heading-color: #fff;
+    --paragraph-color: #fff;
+    --primary-color: #15847d;
+    --secondary-color: #29373d;
+    --container-background: #222228;*/
 }
 
 body {
@@ -107,7 +116,7 @@ p {
 
 .btn-outline {
     color: var(--primary-color);
-    background-color: va(--secondary-color);
+    background-color: var(--secondary-color);
     font-size: 15px;
     cursor: pointer;
 }
