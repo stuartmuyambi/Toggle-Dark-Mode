@@ -3,8 +3,15 @@
 }
 
 :root {
+
+    /*Light Theme*/
     --light-gray: #ededf4;
     --border-color: #f6f6f9;
+    --heading-color: #20123a;
+    --paragraph-color: #666766;
+    --primary-color: #67d1d2;
+    --secondary-color: #f0fafb;
+    --container-background: white;
 }
 
 body {
@@ -17,7 +24,7 @@ body {
 }
 
 .container {
-    background-color: white;
+    background-color: var(--container-background);
     width: 85%;
     height: 80vh;
     border-radius: 15px;
@@ -26,7 +33,7 @@ body {
 }
 
 .left-section {
-    background-color: #ededf4b3;
+    background-color: var(--light-gray);
     margin: 1.5rem;
     border-radius: 15px;
 }
@@ -55,9 +62,9 @@ img {
 }
 
 .icon-nav button {
-    color: #67d1d2;
+    color: var(--primary-color);
     border: none;
-    background-color: #f0fafb;
+    background-color: var(--secondary-color);
     padding: 10px;
     font-size: 15px;
     margin-left: auto;
@@ -66,7 +73,7 @@ img {
 }
 
 h1 {
-    color: #20123a;
+    color: var(--heading-color);
     font-size: 2.6rem;
     margin-top: 45px;
     line-height: 1.1;
@@ -76,7 +83,7 @@ p {
     font-family: 'Roboto';
     line-height: 1.5;
     letter-spacing: 0.01em;
-    color: #666766;
+    color: var(--paragraph-color);
     margin-top: 0;
     margin-bottom: 25px;
 }
@@ -94,20 +101,19 @@ p {
 
 .btn-solid {
     color: white;
-    background-color: #67d1d2;
+    background-color: var(--primary-color);
 
 }
 
 .btn-outline {
-    color: #67d1d2;
-    background-color: #f0fafb;
+    color: var(--primary-color);
+    background-color: va(--secondary-color);
     font-size: 15px;
     cursor: pointer;
 }
 
 .toggle {
-    color: #67d1d2;
-    background-color: #f0fafb;
+    background-color: va(--secondary-color);
     padding: 10px;
  }
 
