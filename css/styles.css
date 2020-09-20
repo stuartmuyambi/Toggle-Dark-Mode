@@ -40,12 +40,16 @@ body {
     margin-bottom: 2rem;
     display: flex;
     flex-direction: column;
+    padding-bottom: 10px;
 }
 
 .left-section {
     background-color: var(--light-gray);
     margin: 1rem 1rem 0;
     border-radius: 15px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .right-section {
@@ -169,5 +173,45 @@ p {
 
     .container {
         padding-bottom: 20px;
+    }
+}
+
+@media(min-width: 414px) {
+
+    h1 {
+        font-size: 2.4rem;
+        line-height: 1;
+    }
+    .button-group {
+        flex-direction: row;
+    }
+
+    .btn-outline,
+    .btn-solid {
+        padding: 12px 30px;
+    }
+}
+
+@media(min-width: 768px) {
+    .container {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        padding-bottom: 40px;
+    }
+
+    h1 {
+        font-size: 2.1rem;
+    }
+}
+
+@media(min-width: 1024px) {
+    .container {
+        width: 87%;
+        padding-bottom: 60px;
+    }
+
+    h1 {
+        font-size: 2.7rem;
+        line-height: 1.1;
     }
 }
