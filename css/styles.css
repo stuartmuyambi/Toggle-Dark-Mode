@@ -13,14 +13,18 @@
     --secondary-color: #f0fafb;
     --container-background: white;
 
-    /*Dark Theme*/
-    /*--light-gray: #2a2a2e;
+
+}
+
+.darkmode {
+    /*Dark Theme class*/
+    --light-gray: #2a2a2e;
     --border-color: #f6f6f9;
     --heading-color: #fff;
     --paragraph-color: #fff;
     --primary-color: #15847d;
     --secondary-color: #29373d;
-    --container-background: #38383d;*/
+    --container-background: #38383d;
 }
 
 body {
@@ -120,6 +124,10 @@ p {
     cursor: pointer;
 }
 
+button:focus {
+    outline: none;
+}
+
 .btn-solid {
     color: white;
     background-color: var(--primary-color);
@@ -182,6 +190,7 @@ p {
         font-size: 2.4rem;
         line-height: 1;
     }
+
     .button-group {
         flex-direction: row;
     }
