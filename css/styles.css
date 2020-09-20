@@ -14,13 +14,13 @@
     --container-background: white;
 
     /*Dark Theme*/
-    /*--light-gray: #2a2a2e;
+    --light-gray: #2a2a2e;
     --border-color: #f6f6f9;
     --heading-color: #fff;
     --paragraph-color: #fff;
     --primary-color: #15847d;
     --secondary-color: #29373d;
-    --container-background: #38383d;*/
+    --container-background: #38383d;
 }
 
 body {
@@ -112,21 +112,31 @@ p {
     margin-right: 5px;
     margin-bottom: 10px;
     font-family: Roboto;
-    font-size: 15px;
+    font-size: 14px;
     cursor: pointer;
 }
 
 .btn-solid {
     color: white;
     background-color: var(--primary-color);
+    transition: background-color .3s ease;
+}
 
+.btn-solid:hover {
+    background-color: #0c534e;
 }
 
 .btn-outline {
-    color: var(--primary-color);
+    color: white;
     background-color: var(--secondary-color);
     font-size: 15px;
     cursor: pointer;
+    border: 1px solid var(--primary-color);
+    transition: background-color .3s ease-in;
+}
+
+.btn-outline:hover {
+    background-color: var(--primary-color);
 }
 
 .toggle {
