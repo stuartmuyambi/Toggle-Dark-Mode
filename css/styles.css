@@ -28,27 +28,28 @@ body {
     display: flex;
     align-items: center;
     justify-content: center;
-    margin-top: 3.5rem;
+    margin-top: 2rem;
     font-family: 'Metropolis';
 }
 
 .container {
     background-color: var(--container-background);
-    width: 85%;
-    height: 80vh;
+    width: 95%;
+    height: auto;
     border-radius: 15px;
-    display: grid;
-    grid-template-columns: 1fr 1fr;
+    margin-bottom: 2rem;
+    display: flex;
+    flex-direction: column;
 }
 
 .left-section {
     background-color: var(--light-gray);
-    margin: 1.5rem;
+    margin: 1rem 1rem 0;
     border-radius: 15px;
 }
 
 .right-section {
-    margin: 1.5rem;
+    margin: 1.2rem;
 }
 
 img {
@@ -61,8 +62,8 @@ img {
 }
 
 .icon-nav img {
-    width: 20px;
-    margin-right: 20px;
+    width: 17px;
+    margin-right: 10px;
     cursor: pointer;
 }
 
@@ -83,26 +84,33 @@ img {
 
 h1 {
     color: var(--heading-color);
-    font-size: 2.6rem;
-    margin-top: 45px;
+    font-size: 1.8rem;
+    margin-top: 5px;
     line-height: 1.1;
 }
 
 p {
     font-family: 'Roboto';
-    line-height: 1.5;
+    font-size: 0.938rem;
+    line-height: 1.6;
     letter-spacing: 0.01em;
     color: var(--paragraph-color);
     margin-top: 0;
     margin-bottom: 25px;
 }
 
+.button-group {
+    display: flex;
+    flex-direction: column;
+}
+
 .btn-solid,
 .btn-outline {
-    padding: 15px 25px;
+    padding: 13px 25px;
     border-radius: 6px;
     border: none;
     margin-right: 5px;
+    margin-bottom: 10px;
     font-family: Roboto;
     font-size: 15px;
     cursor: pointer;
