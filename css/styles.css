@@ -14,13 +14,13 @@
     --container-background: white;
 
     /*Dark Theme*/
-    --light-gray: #2a2a2e;
+    /*--light-gray: #2a2a2e;
     --border-color: #f6f6f9;
     --heading-color: #fff;
     --paragraph-color: #fff;
     --primary-color: #15847d;
     --secondary-color: #29373d;
-    --container-background: #38383d;
+    --container-background: #38383d;*/
 }
 
 body {
@@ -127,8 +127,8 @@ p {
 }
 
 .btn-outline {
-    color: white;
-    background-color: var(--secondary-color);
+    color: var(--primary-color);
+    background-color: transparent;
     font-size: 15px;
     cursor: pointer;
     border: 1px solid var(--primary-color);
@@ -136,6 +136,7 @@ p {
 }
 
 .btn-outline:hover {
+    color: white;
     background-color: var(--primary-color);
 }
 
